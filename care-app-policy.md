@@ -1,46 +1,137 @@
-Privacy Policy  
+Privacy Policy
 ----------------
 
-### Introduction  
-Our privacy policy will help you understand what information we collect at Care, how Care uses it, and what choices you have.
-Care built the Care app as a free app. This SERVICE is provided by Care at no cost and is intended for use as is.
-If you choose to use our Service, then you agree to the collection and use of information in  relation with this policy. The Personal Information that we collect are used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.  
-The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible in our website, unless otherwise  defined in this Privacy Policy.
+**Last updated: 2026-08-06**
 
-### Information Collection and Use  
-For a better experience while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to users name, email address, gender, location, pictures. The information that we request will be retained by us and used as described in this privacy policy.  
-The app does use third party services that may collect information used to identify you. 
+### Introduction
+This privacy policy explains what information Care Record collects, how it is used, and what choices you have. It is written to match the data disclosure shown on the App Store product page.
 
-### Cookies  
-Cookies are files with small amount of data that is commonly used an anonymous unique identifier. These are sent to your browser from the website that you visit and are stored on your devices’s internal memory.  
+Care Record is a care-logging app: you record what you did for someone you look after — a pet, a family member, or yourself.
 
-This Services does not uses these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collection information and to improve their services. You have the option  to either accept or refuse these cookies, and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.  
+### What We Collect
 
-### Location Information  
-Some of the services may use location information transmitted from users' mobile phones. We only use this information within the scope necessary for the designated service.  
+**Linked to your identity**
 
-### Device Information  
-We collect information from your device in some cases. The information will be utilized for the provision of better service and to prevent fraudulent acts. Additionally, such information will not include that which will identify the individual user.  
+| Data | What it is | Why |
+|---|---|---|
+| Email address | Only if you sign in with email, Apple, or Google | To create your account and sync your records across devices |
+| User content | The care recipients, items and records you create, and any photos you attach | This is the core function of the app — it is your data |
+| User ID | The account identifier assigned when you sign in | To store and retrieve your own records |
+| Usage data | Which features are used (for example: an account was created, a record was added) | To understand where people get stuck and improve the app |
 
-### Service Providers  
-We may employ third-party companies and individuals due to the following reasons:  
-* To facilitate our Service;
-* To provide the Service on our behalf;
-* To perform Service-related services; or
-* To assist us in analyzing how our Service is used.  
+**Not linked to your identity**
 
-We want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.  
+| Data | What it is | Why |
+|---|---|---|
+| Diagnostics | Crash reports, device model, OS version, performance data | To find and fix crashes |
+| Device identifier | An advertising identifier used by the ad service | To show ads |
 
-### Security  
-We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over  the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.  
+### What We Do Not Collect
+- **We do not collect your location.** The app requests no location permission and no location data is transmitted.
+- We do not collect your name, gender, contacts, health records, or financial information.
+- We do not sell your data to anyone.
 
-### Children’s Privacy  
-This Services do not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you  are  a  parent  or  guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.  
+### Guest Mode
+You can use Care Record **without creating an account**. In guest mode your records are stored under an anonymous account. If you later link an Apple, Google, or email account, your existing records are kept.
 
-### Changes to This Privacy Policy  
-We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.  
+⚠️ Guest data lives only on that device's anonymous account. If you delete the app without linking an account, those records cannot be recovered.
 
-### Contact Us  
-If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.  
-Contact Information:  
-Email: lkk54545@gmail.com 
+### Third Party Services
+The app uses the following services. Each has its own privacy policy:
+
+- **Firebase Authentication, Cloud Firestore, Cloud Storage** (Google) — account sign-in and storing your records and photos
+- **Firebase Analytics** (Google) — anonymous usage statistics
+- **Firebase Crashlytics** (Google) — crash reporting
+- **Google AdMob** — advertising
+
+Google's privacy policy: https://policies.google.com/privacy
+Firebase: https://firebase.google.com/support/privacy
+
+### Tracking
+Care Record **does not track you across apps or websites owned by other companies**. The app does not request App Tracking Transparency permission, and ads shown are not personalised using a cross-app advertising identifier.
+
+### Your Choices
+- **Delete your account and all data**: Settings → Account → Delete Account. This removes your records from our servers and deletes the account itself.
+- **Stop analytics and crash reporting**: uninstall the app, or use guest mode and delete the app when finished.
+
+### Security
+Your records are stored in Google Cloud Firestore with access rules that only allow your own account to read and write them. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.
+
+### Children's Privacy
+This service is not directed at anyone under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it.
+
+### Changes to This Privacy Policy
+This policy may be updated from time to time. Any changes will be posted on this page with a revised "Last updated" date above.
+
+### Contact Us
+If you have any questions about this privacy policy, please contact us at **lkk54545@gmail.com**.
+
+---
+
+隱私政策（繁體中文）
+----------------
+
+**最後更新：2026-08-06**
+
+### 前言
+這份隱私政策說明 Care Record 會收集哪些資料、怎麼使用，以及你有哪些選擇。內容與 App Store 產品頁上的資料揭露一致。
+
+Care Record 是一款照護紀錄 App：記錄你為所照顧的對象做了什麼——寵物、家人，或你自己。
+
+### 我們收集什麼
+
+**與你的身分連結**
+
+| 資料 | 是什麼 | 為什麼 |
+|---|---|---|
+| 電子郵件位址 | 只有在你以電子郵件、Apple 或 Google 登入時 | 建立帳號、讓紀錄能在不同裝置間同步 |
+| 使用者內容 | 你建立的照護對象、記錄項目、紀錄，以及附加的照片 | 這就是 App 的核心功能——那是你的資料 |
+| 使用者 ID | 登入時配發的帳號識別碼 | 用來存取屬於你的紀錄 |
+| 使用狀況資料 | 哪些功能被使用（例如：建立了帳號、新增了一筆紀錄） | 了解使用者卡在哪裡，據以改善 App |
+
+**未與你的身分連結**
+
+| 資料 | 是什麼 | 為什麼 |
+|---|---|---|
+| 診斷資料 | 當機報告、裝置型號、作業系統版本、效能資料 | 找出並修正當機 |
+| 裝置識別碼 | 廣告服務使用的廣告識別碼 | 顯示廣告 |
+
+### 我們不收集什麼
+- **我們不收集你的位置。** App 不會要求位置權限，也不會傳送任何位置資料。
+- 我們不收集你的姓名、性別、通訊錄、健康紀錄或金融資訊。
+- 我們不會把你的資料賣給任何人。
+
+### 訪客模式
+你可以**不建立帳號**就使用 Care Record。訪客模式下，你的紀錄會存在一個匿名帳號底下。之後若綁定 Apple、Google 或電子郵件帳號，既有的紀錄會完整保留。
+
+⚠️ 訪客資料只存在該裝置的匿名帳號上。**若未綁定帳號就刪除 App，那些紀錄將無法復原。**
+
+### 第三方服務
+本 App 使用下列服務，各自有其隱私政策：
+
+- **Firebase Authentication、Cloud Firestore、Cloud Storage**（Google）——帳號登入、儲存你的紀錄與照片
+- **Firebase Analytics**（Google）——匿名的使用狀況統計
+- **Firebase Crashlytics**（Google）——當機回報
+- **Google AdMob**——廣告
+
+Google 隱私政策：https://policies.google.com/privacy
+Firebase：https://firebase.google.com/support/privacy
+
+### 關於追蹤
+Care Record **不會跨其他公司的 App 或網站追蹤你**。本 App 不會要求 App 追蹤透明度（ATT）權限，顯示的廣告也不會使用跨 App 的廣告識別碼進行個人化。
+
+### 你的選擇
+- **刪除帳號與所有資料**：設定 → 帳號 → 刪除帳號。這會移除伺服器上你的紀錄，並刪除帳號本身。
+- **停止分析與當機回報**：解除安裝 App；或使用訪客模式，用完後刪除 App。
+
+### 資安
+你的紀錄存放在 Google Cloud Firestore，存取規則設定為只有你自己的帳號能讀寫。但沒有任何傳輸或儲存方式是完全安全的，因此我們無法保證絕對的安全性。
+
+### 兒童隱私
+本服務不針對 13 歲以下的使用者。我們不會在知情的情況下收集 13 歲以下兒童的個人資訊。若你認為有兒童向我們提供了個人資訊，請與我們聯絡，我們會予以刪除。
+
+### 政策變更
+本政策可能不時更新。任何變更都會公布於本頁，並更新上方的「最後更新」日期。
+
+### 聯絡我們
+如對本隱私政策有任何疑問，請來信 **lkk54545@gmail.com**。
