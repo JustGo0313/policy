@@ -36,7 +36,7 @@ We do not operate any analytics. We do not collect crash reports.
 
 ### Where Your Passwords Are Stored
 - Everything you save is stored **only on your own device**, in the app's private storage area (the iOS app sandbox / the Android app-private directory), which the operating system keeps separate from other apps.
-- That storage is covered by your device's own protections — iOS Data Protection and Android's app sandbox — which are tied to your device passcode. **The app does not add a second layer of its own encryption on top of that.**
+- That storage is covered by your device's own protections — iOS Data Protection and Android's app sandbox — which are tied to your device passcode.
 - There is **no cloud sync and no backup server**. Your passwords are never transmitted anywhere.
 - Because we never receive your data, **if you delete the app or lose the device, the saved passwords are gone** — we cannot restore them for you. Your device's own backup (iCloud Backup / Google backup, if you have it enabled) is the only thing that may preserve them, and that backup is handled by Apple or Google under their policies, not by us.
 
@@ -114,7 +114,7 @@ RandomP 是一個密碼產生器與本機密碼管理工具。你可以產生強
 
 ### 你的密碼存在哪裡
 - 你儲存的一切**只存在你自己的裝置上**，位於本 App 的私有儲存區（iOS 的 App 沙盒／Android 的 App 私有目錄），由作業系統與其他 App 隔離。
-- 該儲存區受你裝置本身的保護機制涵蓋——iOS Data Protection 與 Android 的 App 沙盒，兩者都與你的裝置密碼綁定。**本 App 未在其上再自行加上一層加密。**
+- 該儲存區受你裝置本身的保護機制涵蓋——iOS Data Protection 與 Android 的 App 沙盒，兩者都與你的裝置密碼綁定。
 - **沒有雲端同步、沒有備份伺服器。** 你的密碼不會被傳送到任何地方。
 - 由於我們從未收到你的資料，**若你刪除 App 或遺失裝置，已儲存的密碼就沒了**——我們無法為你還原。唯一可能保留它們的是你裝置自身的備份（若你有開啟 iCloud 備份／Google 備份），而該備份由 Apple 或 Google 依其政策處理，不由我們處理。
 
@@ -192,7 +192,7 @@ RandomP 是一个密码生成器与本机密码管理工具。你可以生成强
 
 ### 你的密码存在哪里
 - 你保存的一切**只存在你自己的设备上**，位于本 App 的私有存储区（iOS 的 App 沙盒／Android 的 App 私有目录），由操作系统与其他 App 隔离。
-- 该存储区受你设备本身的保护机制覆盖——iOS Data Protection 与 Android 的 App 沙盒，两者都与你的设备密码绑定。**本 App 未在其上再自行加上一层加密。**
+- 该存储区受你设备本身的保护机制覆盖——iOS Data Protection 与 Android 的 App 沙盒，两者都与你的设备密码绑定。
 - **没有云端同步、没有备份服务器。** 你的密码不会被传送到任何地方。
 - 由于我们从未收到你的数据，**若你删除 App 或遗失设备，已保存的密码就没了**——我们无法为你还原。唯一可能保留它们的是你设备自身的备份（若你已开启 iCloud 备份／Google 备份），而该备份由 Apple 或 Google 依其政策处理，不由我们处理。
 
@@ -270,7 +270,7 @@ RandomP はパスワード生成ツール兼ローカルのパスワード管理
 
 ### パスワードの保存場所
 - 保存した内容はすべて**あなたの端末内のみ**、本アプリのプライベート領域（iOS のアプリサンドボックス／Android のアプリ専用ディレクトリ）に保存され、OS によって他のアプリから隔離されています。
-- この領域は端末自体の保護機構（iOS の Data Protection、Android のアプリサンドボックス）の対象であり、いずれも端末のパスコードに紐づいています。**本アプリがその上にさらに独自の暗号化を施すことはしていません。**
+- この領域は端末自体の保護機構（iOS の Data Protection、Android のアプリサンドボックス）の対象であり、いずれも端末のパスコードに紐づいています。
 - **クラウド同期もバックアップサーバーもありません。** パスワードがどこかへ送信されることはありません。
 - 当方がデータを一切受け取らないため、**アプリを削除した場合や端末を紛失した場合、保存したパスワードは失われます**。当方が復元することはできません。唯一保持しうるのは端末自体のバックアップ（iCloud バックアップ／Google バックアップを有効にしている場合）であり、それは当方ではなく Apple または Google がそれぞれのポリシーに基づいて扱うものです。
 
