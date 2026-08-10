@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aquabook — Support</title>
+<style>
+  :root {
+    --paper: #F2F8F9; --card: #FFFFFF; --ink: #10222A; --slate: #566B73;
+    --line: #DBE7EA; --teal: #00695C; --teal-soft: #D5EAE7;
+    --shadow: 0 1px 2px rgba(16,34,42,.06), 0 8px 24px rgba(16,34,42,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #0C1619; --card: #142126; --ink: #E6EFF1; --slate: #91A5AC;
+      --line: #24343A; --teal: #5FCFBB; --teal-soft: #143029;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #0C1619; --card: #142126; --ink: #E6EFF1; --slate: #91A5AC;
+    --line: #24343A; --teal: #5FCFBB; --teal-soft: #143029;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+  }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.7; font-size: 17px;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 1.9rem; line-height: 1.3; margin: 0 0 .5rem; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .75rem; color: var(--teal); }
+  .lede { color: var(--slate); margin: 0 0 2rem; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 1.15rem 1.35rem; box-shadow: var(--shadow); margin: 1rem 0;
+  }
+  .q { font-weight: 600; margin: 0 0 .35rem; }
+  .a { margin: 0; color: var(--slate); }
+  .a strong { color: var(--ink); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .35rem 0; }
+  .mail {
+    display: inline-block; background: var(--teal); color: #fff;
+    padding: .6rem 1.2rem; border-radius: 10px; text-decoration: none;
+    font-weight: 600; margin-top: .5rem;
+  }
+  code { background: var(--teal-soft); color: var(--teal);
+         padding: .1rem .35rem; border-radius: 5px; font-size: .88em; }
+  footer { color: var(--slate); font-size: .88rem; margin-top: 3rem;
+           border-top: 1px solid var(--line); padding-top: 1.25rem; }
+  a { color: var(--teal); }
+</style>
+</head>
+<body>
+
+<main>
+  <h1>Aquabook Support</h1>
+  <p class="lede">A water log for aquarium keepers. Track parameters, livestock,
+  equipment and maintenance — no account, no subscription, no ads.</p>
+
+  <h2>Contact</h2>
+  <div class="card">
+    <p style="margin:0 0 .3rem">Usually answered within <strong>2 business days</strong>.</p>
+    <a class="mail" href="mailto:lkk54545@gmail.com?subject=Aquabook%20support">Email us</a>
+    <p class="a" style="margin-top:.8rem">
+      If something went wrong with a purchase, please include:
+      the <strong>Apple receipt or order ID</strong> from your email,
+      the <strong>date</strong> you bought it, and your
+      <strong>iOS version</strong>. Aquabook has no accounts and no servers,
+      so that receipt is the only thing that identifies your purchase.
+    </p>
+  </div>
+
+  <h2>Purchases</h2>
+
+  <div class="card">
+    <p class="q">I paid for Pro but it did not unlock</p>
+    <p class="a">Open <strong>Aquabook Pro</strong> (the ribbon icon on the tank
+    list) and tap <strong>Restore purchases</strong>. Purchases are tied to your
+    Apple Account, so this also works on a new phone. If it still does not
+    unlock, email us with the receipt and we will sort it out.</p>
+  </div>
+
+  <div class="card">
+    <p class="q">What does Pro actually include?</p>
+    <p class="a"><strong>Unlimited tanks.</strong> That is the whole difference.
+    The free version covers one tank with no other limits — unlimited readings,
+    livestock, events and reminders, automatic backup and full data export are
+    all free. Pro is a <strong>one-time purchase</strong>, not a subscription,
+    and there is nothing to renew.</p>
+  </div>
+
+  <div class="card">
+    <p class="q">The purchase screen says Pro is unavailable</p>
+    <p class="a">That usually means the App Store could not be reached — check
+    your connection and tap <strong>Try again</strong>. On a brand-new release
+    it can also mean the purchase is still being reviewed by Apple; it will
+    start working without any update from you.</p>
+  </div>
+
+  <h2>Your data</h2>
+
+  <div class="card">
+    <p class="q">Is my data backed up?</p>
+    <p class="a">From <strong>version 1.1</strong>, Aquabook keeps one backup in
+    <strong>your own iCloud</strong> and refreshes it in the background — there
+    is no button to press. It goes to your private iCloud container, not to us:
+    Aquabook has no servers and no account, so we never see your records.
+    You can see the status any time under
+    <strong>share icon → iCloud backup</strong>.</p>
+  </div>
+
+  <div class="card">
+    <p class="q">I got a new phone. How do I get my records back?</p>
+    <p class="a">Sign in to the same Apple Account, install Aquabook and open
+    it. If a backup is found, it offers to restore before you start.
+    If you skipped that prompt, go to
+    <strong>share icon → iCloud backup → Restore</strong>.</p>
+  </div>
+
+  <div class="card">
+    <p class="q">Can I get my data out of the app?</p>
+    <p class="a"><strong>Yes, and it is free.</strong> Tap the
+    <strong>share icon</strong> on the tank list:
+    <strong>Full backup (JSON)</strong> is everything in one file, and
+    <strong>Water readings / Events (CSV)</strong> open directly in any
+    spreadsheet. Your measurements are exported exactly as you entered them.</p>
+  </div>
+
+  <div class="card">
+    <p class="q">Aquabook says my tank has no target ranges</p>
+    <p class="a">Target ranges are not filled in for you — the app never guesses
+    what is right for <em>your</em> tank. Open the
+    <strong>flask icon → a parameter</strong> and set a range (typical ranges
+    are shown there, and you can apply one with a tap). Until you do, Aquabook
+    will not claim your readings are in range, because it has nothing to
+    compare them to.</p>
+  </div>
+
+  <div class="card">
+    <p class="q">Why is there no built-in fish or plant database?</p>
+    <p class="a">Deliberately. Every species list is wrong for someone, and a
+    list that does not include your fish is worse than no list at all.
+    Everything in Aquabook — parameters, livestock, equipment, event types —
+    is whatever you type in.</p>
+  </div>
+
+  <h2>Other pages</h2>
+  <ul>
+    <li><a href="https://github.com/JustGo0313/policy/blob/main/aquabook-policy.md">Privacy policy</a></li>
+  </ul>
+
+  <footer>
+    Aquabook · <a href="mailto:lkk54545@gmail.com">lkk54545@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
