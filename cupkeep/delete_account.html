@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CupKeep — 刪除帳號</title>
+<style>
+  :root {
+    --paper: #F6F9F8; --card: #FFFFFF; --ink: #13201D; --slate: #5B6C68;
+    --line: #DDE6E3; --teal: #00695C; --teal-soft: #D6EBE5;
+    --amber: #9A5B00; --amber-soft: #F7EBD9;
+    --shadow: 0 1px 2px rgba(19,32,29,.06), 0 8px 24px rgba(19,32,29,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0E1614; --card: #16211E; --ink: #E7EFEC; --slate: #94A6A1;
+      --line: #26332F; --teal: #5FCFBB; --teal-soft: #16332E;
+      --amber: #E0A867; --amber-soft: #2C2318;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #0E1614; --card: #16211E; --ink: #E7EFEC; --slate: #94A6A1;
+    --line: #26332F; --teal: #5FCFBB; --teal-soft: #16332E;
+    --amber: #E0A867; --amber-soft: #2C2318;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+  }
+  :root[data-theme="light"] {
+    --paper: #F6F9F8; --card: #FFFFFF; --ink: #13201D; --slate: #5B6C68;
+    --line: #DDE6E3; --teal: #00695C; --teal-soft: #D6EBE5;
+    --amber: #9A5B00; --amber-soft: #F7EBD9;
+    --shadow: 0 1px 2px rgba(19,32,29,.06), 0 8px 24px rgba(19,32,29,.06);
+  }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: -apple-system, "PingFang TC", "Noto Sans TC", sans-serif;
+    line-height: 1.75; font-size: 17px;
+  }
+  main { max-width: 40rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 1.9rem; line-height: 1.3; text-wrap: balance; margin: 0 0 .5rem; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .75rem; color: var(--teal); }
+  .lede { color: var(--slate); margin: 0 0 2rem; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 1.25rem 1.4rem; box-shadow: var(--shadow); margin: 1rem 0;
+  }
+  ol, ul { padding-left: 1.3rem; }
+  li { margin: .4rem 0; }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--slate); font-weight: 600; }
+  .keep { background: var(--amber-soft); color: var(--amber);
+          border-radius: 999px; padding: .1rem .6rem; font-size: .82rem; white-space: nowrap; }
+  .gone { background: var(--teal-soft); color: var(--teal);
+          border-radius: 999px; padding: .1rem .6rem; font-size: .82rem; white-space: nowrap; }
+  code { background: var(--teal-soft); color: var(--teal);
+         padding: .1rem .35rem; border-radius: 5px; font-size: .9em; }
+  footer { color: var(--slate); font-size: .88rem; margin-top: 3rem;
+           border-top: 1px solid var(--line); padding-top: 1.25rem; }
+  a { color: var(--teal); }
+</style>
+</head>
+<body>
+
+<main>
+  <h1>刪除你的 CupKeep 帳號</h1>
+  <p class="lede">你可以在 App 裡自己刪，不必聯絡任何人。這一頁說明怎麼刪、刪掉什麼、以及什麼會留下來。</p>
+
+  <h2>在 App 裡刪</h2>
+  <div class="card">
+    <ol>
+      <li>打開 CupKeep</li>
+      <li>切到最下面的<strong>「帳號」</strong>分頁（店家端在「總覽」的帳號區塊）</li>
+      <li>點<strong>「刪除帳號」</strong></li>
+      <li>畫面會先告訴你會影響哪幾家店，確認後再重新登入一次驗證身分</li>
+    </ol>
+  </div>
+
+  <h2>刪掉什麼、留下什麼</h2>
+  <table>
+    <tr><th>資料</th><th></th><th>為什麼</th></tr>
+    <tr>
+      <td>你的登入身分（Google／Apple／訪客帳號）</td>
+      <td><span class="gone">刪除</span></td>
+      <td>用 Apple 登入的話，我們同時會撤銷授權，你的「以 Apple 帳號登入」設定裡不會留下這個 App</td>
+    </tr>
+    <tr>
+      <td>你和各家店的連結</td>
+      <td><span class="gone">刪除</span></td>
+      <td>店家那邊會變回「這位客人尚未綁定」</td>
+    </tr>
+    <tr>
+      <td>App 內的個人偏好</td>
+      <td><span class="gone">刪除</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>店家帳本上的寄杯／領杯紀錄</td>
+      <td><span class="keep">保留</span></td>
+      <td>那是<strong>店家的營業紀錄</strong>，同一份紀錄裡也有其他客人的預付款。刪掉會同時毀掉別人的憑據</td>
+    </tr>
+  </table>
+
+  <div class="card">
+    <strong>你手上還沒領的杯子不會消失。</strong>
+    它們記在店家的帳本上，跟你的帳號是分開的兩件事。
+    之後想再用 App 查，請店家重新綁定一次就會回來。
+  </div>
+
+  <h2>店家帳號要特別注意</h2>
+  <div class="card">
+    如果你是某家店<strong>唯一的管理者</strong>，刪掉帳號之後就沒有任何人能再打開那家店——
+    帳本會留著，但沒有人看得到。App 在確認畫面會把那幾家店的名字列出來。
+    <br><br>
+    還需要那些紀錄的話，<strong>先用「匯出 CSV」把資料存下來</strong>再刪。
+  </div>
+
+  <h2>沒有裝 App 也想刪</h2>
+  <div class="card">
+    寄信到 <a href="mailto:hameboy8@yahoo.com.tw?subject=CupKeep%20%E5%88%AA%E9%99%A4%E5%B8%B3%E8%99%9F">hameboy8@yahoo.com.tw</a>，
+    主旨寫「CupKeep 刪除帳號」。為了確認是本人，請附上你在 App「帳號」分頁看得到的帳號碼，
+    或你有寄杯的店名。我們會在 7 天內處理完並回信。
+  </div>
+
+  <h2>保存期限</h2>
+  <p>保留下來的帳本紀錄，自該位客人<strong>最後一筆流水起算保存 5 年</strong>（商業帳務所需）；
+  從未有過流水、也未綁定任何帳號的客人資料保存 1 年。資料存放於 Google Cloud
+  <code>asia-east1</code>（台灣）。</p>
+
+  <h2>其他頁面</h2>
+  <ul>
+    <li><a href="https://justgo0313.github.io/policy/cupkeep/privacy.html">隱私政策</a></li>
+    <li><a href="https://justgo0313.github.io/policy/cupkeep/support.html">支援與常見問題</a></li>
+  </ul>
+
+  <footer>
+    CupKeep · 最後更新 2026-08-08 ·
+    有問題請寄 <a href="mailto:hameboy8@yahoo.com.tw">hameboy8@yahoo.com.tw</a>
+  </footer>
+</main>
+</body>
+</html>

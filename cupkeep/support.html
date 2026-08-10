@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CupKeep — 支援</title>
+<style>
+  :root {
+    --paper: #F6F9F8; --card: #FFFFFF; --ink: #13201D; --slate: #5B6C68;
+    --line: #DDE6E3; --teal: #00695C; --teal-soft: #D6EBE5;
+    --amber: #9A5B00; --amber-soft: #F7EBD9;
+    --shadow: 0 1px 2px rgba(19,32,29,.06), 0 8px 24px rgba(19,32,29,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0E1614; --card: #16211E; --ink: #E7EFEC; --slate: #94A6A1;
+      --line: #26332F; --teal: #5FCFBB; --teal-soft: #16332E;
+      --amber: #E0A867; --amber-soft: #2C2318;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #0E1614; --card: #16211E; --ink: #E7EFEC; --slate: #94A6A1;
+    --line: #26332F; --teal: #5FCFBB; --teal-soft: #16332E;
+    --amber: #E0A867; --amber-soft: #2C2318;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+  }
+  :root[data-theme="light"] {
+    --paper: #F6F9F8; --card: #FFFFFF; --ink: #13201D; --slate: #5B6C68;
+    --line: #DDE6E3; --teal: #00695C; --teal-soft: #D6EBE5;
+    --amber: #9A5B00; --amber-soft: #F7EBD9;
+    --shadow: 0 1px 2px rgba(19,32,29,.06), 0 8px 24px rgba(19,32,29,.06);
+  }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: -apple-system, "PingFang TC", "Noto Sans TC", sans-serif;
+    line-height: 1.75; font-size: 17px;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 1.9rem; line-height: 1.3; text-wrap: balance; margin: 0 0 .5rem; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .75rem; color: var(--teal); }
+  .lede { color: var(--slate); margin: 0 0 2rem; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 1.15rem 1.35rem; box-shadow: var(--shadow); margin: 1rem 0;
+  }
+  .q { font-weight: 600; margin: 0 0 .35rem; }
+  .a { margin: 0; color: var(--slate); }
+  .a strong { color: var(--ink); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .35rem 0; }
+  .mail {
+    display: inline-block; background: var(--teal); color: #fff;
+    padding: .6rem 1.2rem; border-radius: 10px; text-decoration: none;
+    font-weight: 600; margin-top: .5rem;
+  }
+  code { background: var(--teal-soft); color: var(--teal);
+         padding: .1rem .35rem; border-radius: 5px; font-size: .88em; }
+  footer { color: var(--slate); font-size: .88rem; margin-top: 3rem;
+           border-top: 1px solid var(--line); padding-top: 1.25rem; }
+  a { color: var(--teal); }
+</style>
+</head>
+<body>
+
+<main>
+  <h1>CupKeep 支援</h1>
+  <p class="lede">寄杯管理。店家記錄客人預購寄存的杯數，客人自己查得到還剩幾杯。</p>
+
+  <h2>直接聯絡</h2>
+  <div class="card">
+    <p style="margin:0 0 .3rem">回信時間：<strong>通常 2 個工作天內</strong>。</p>
+    <a class="mail" href="mailto:hameboy8@yahoo.com.tw?subject=CupKeep">寄信給我們</a>
+    <p class="a" style="margin-top:.8rem">
+      更快的做法：在 App 裡點「<strong>帳號 → 回報問題</strong>」。
+      它會自動帶上版本、平台與帳號代碼，<strong>不含任何客人姓名或杯數</strong>——
+      你只要描述遇到什麼狀況就好。
+    </p>
+  </div>
+
+  <h2>常見問題</h2>
+
+  <div class="card">
+    <p class="q">客人換手機之後，寄杯不見了</p>
+    <p class="a">如果他當初是用<strong>訪客身分</strong>（沒有用 Google／Apple 登入），
+    身分就綁在原本那支手機上，換機後拿到的是全新身分。
+    <strong>杯子沒有消失</strong>——它記在店家的帳本上。
+    請店家在客人清單找到他，<strong>重新產生一組客人碼</strong>讓他重綁即可。</p>
+  </div>
+
+  <div class="card">
+    <p class="q">客人說他綁定了，卻一直看到「請輸入客人碼」</p>
+    <p class="a">通常是綁定只完成了一半。請客人把 App 關掉重開——
+    客人端會自己修好這種狀態。還是不行的話，請店家<strong>重新產生客人碼</strong>再綁一次。</p>
+  </div>
+
+  <div class="card">
+    <p class="q">記錯了一筆，可以改嗎？</p>
+    <p class="a">不能改，但可以<strong>作廢</strong>。作廢會補上一筆反向紀錄，
+    杯數立刻回到正確的數字，而原本那筆仍然留在流水上。
+    這是刻意的——帳本能被偷偷改掉的話，客人就沒有理由相信上面的數字。</p>
+  </div>
+
+  <div class="card">
+    <p class="q">櫃台沒網路還能記帳嗎？</p>
+    <p class="a"><strong>可以。</strong>斷網時照樣寄、領、查，資料先存在手機裡，
+    連上網會自動送出去。網路是不是穩定，不該決定客人能不能領到他的飲料。</p>
+  </div>
+
+  <div class="card">
+    <p class="q">同一家店可以幾個人一起用嗎？</p>
+    <p class="a">可以。店主在「總覽 → 成員」產生邀請碼，店員用自己的帳號加入即可，
+    <strong>不必共用老闆的密碼</strong>。每一筆流水都會記下是誰記的。</p>
+  </div>
+
+  <div class="card">
+    <p class="q">要收費嗎？</p>
+    <p class="a"><strong>客人永遠免費。</strong>
+    店家有免費額度，客人數超過之後才需要付費——
+    但<strong>既有客人的寄與領一律不會被擋</strong>，已經收過錢的客人不會被鎖在門外。</p>
+  </div>
+
+  <div class="card">
+    <p class="q">怎麼把資料帶走？</p>
+    <p class="a">店家端「總覽 → 匯出 CSV」。
+    ⚠️ 匯出的是<strong>最近這段期間</strong>的紀錄，畫面上會標明天數。</p>
+  </div>
+
+  <div class="card">
+    <p class="q">怎麼刪除帳號？</p>
+    <p class="a">App 內「帳號」分頁 →「刪除帳號」。完整說明見
+    <a href="https://justgo0313.github.io/policy/cupkeep/delete_account.html">刪除帳號</a>。</p>
+  </div>
+
+  <h2>其他頁面</h2>
+  <ul>
+    <li><a href="https://justgo0313.github.io/policy/cupkeep/privacy.html">隱私政策</a></li>
+    <li><a href="https://justgo0313.github.io/policy/cupkeep/delete_account.html">刪除帳號說明</a></li>
+  </ul>
+
+  <footer>
+    CupKeep · <a href="mailto:hameboy8@yahoo.com.tw">hameboy8@yahoo.com.tw</a>
+  </footer>
+</main>
+</body>
+</html>

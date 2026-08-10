@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CupKeep — 隱私政策</title>
+<style>
+  :root {
+    --paper: #F6F9F8; --card: #FFFFFF; --ink: #13201D; --slate: #5B6C68;
+    --line: #DDE6E3; --teal: #00695C; --teal-soft: #D6EBE5;
+    --amber: #9A5B00; --amber-soft: #F7EBD9;
+    --shadow: 0 1px 2px rgba(19,32,29,.06), 0 8px 24px rgba(19,32,29,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0E1614; --card: #16211E; --ink: #E7EFEC; --slate: #94A6A1;
+      --line: #26332F; --teal: #5FCFBB; --teal-soft: #16332E;
+      --amber: #E0A867; --amber-soft: #2C2318;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #0E1614; --card: #16211E; --ink: #E7EFEC; --slate: #94A6A1;
+    --line: #26332F; --teal: #5FCFBB; --teal-soft: #16332E;
+    --amber: #E0A867; --amber-soft: #2C2318;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+  }
+  :root[data-theme="light"] {
+    --paper: #F6F9F8; --card: #FFFFFF; --ink: #13201D; --slate: #5B6C68;
+    --line: #DDE6E3; --teal: #00695C; --teal-soft: #D6EBE5;
+    --amber: #9A5B00; --amber-soft: #F7EBD9;
+    --shadow: 0 1px 2px rgba(19,32,29,.06), 0 8px 24px rgba(19,32,29,.06);
+  }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: -apple-system, "PingFang TC", "Noto Sans TC", sans-serif;
+    line-height: 1.75; font-size: 17px;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 1.9rem; line-height: 1.3; text-wrap: balance; margin: 0 0 .5rem; }
+  h2 { font-size: 1.15rem; margin: 2.75rem 0 .75rem; color: var(--teal);
+       padding-top: 1.25rem; border-top: 1px solid var(--line); }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .4rem; }
+  .lede { color: var(--slate); margin: 0 0 1.5rem; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 1.15rem 1.35rem; box-shadow: var(--shadow); margin: 1.15rem 0;
+  }
+  .card.warn { background: var(--amber-soft); border-color: transparent; }
+  .scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; margin: 0; font-size: .93rem;
+          min-width: 30rem; }
+  th, td { text-align: left; padding: .55rem .5rem; border-bottom: 1px solid var(--line);
+           vertical-align: top; }
+  th { color: var(--slate); font-weight: 600; }
+  ul, ol { padding-left: 1.3rem; } li { margin: .35rem 0; }
+  code { background: var(--teal-soft); color: var(--teal);
+         padding: .1rem .35rem; border-radius: 5px; font-size: .88em; }
+  .no { color: var(--teal); font-weight: 600; }
+  footer { color: var(--slate); font-size: .88rem; margin-top: 3rem;
+           border-top: 1px solid var(--line); padding-top: 1.25rem; }
+  a { color: var(--teal); }
+</style>
+</head>
+<body>
+
+<main>
+  <h1>CupKeep 隱私政策</h1>
+  <p class="lede">最後更新：2026 年 8 月 9 日</p>
+
+  <div class="card">
+    <p style="margin:0"><strong>一句話版本：</strong>CupKeep 是店家的寄杯帳本。
+    店家輸入什麼，我們就存什麼；客人這一端<strong>連姓名和電話都不必給</strong>。
+    我們不賣資料、不投放廣告、沒有任何第三方追蹤 SDK。</p>
+  </div>
+
+  <h2>誰在處理你的資料</h2>
+  <p>CupKeep 由個人開發者維運。資料存放在 Google Firebase（Firestore、Authentication、
+  Storage、Analytics、Crashlytics），機房位於 <code>asia-east1</code>（台灣）。
+  聯絡方式：<a href="mailto:hameboy8@yahoo.com.tw">hameboy8@yahoo.com.tw</a>。</p>
+
+  <h2>店家與客人是兩種不同的角色</h2>
+  <p>同一個 App 有兩端，收集的資料差很多，所以分開說。</p>
+
+  <h3>客人這一端</h3>
+  <div class="card">
+    <p style="margin:.2rem 0"><strong>預設連帳號都不用註冊。</strong>
+    打開就是一組匿名身分（只有一串隨機 uid），用來對應「你是店家帳本上的哪一位」。</p>
+    <p style="margin:.6rem 0 .2rem">你選擇用 Google 或 Apple 登入時，我們才會拿到
+    <strong>電子郵件與帳號顯示名稱</strong>——那只是為了讓你換手機時找得回同一份寄杯，
+    <strong class="no">店家看不到它</strong>。</p>
+    <p style="margin:.6rem 0 .2rem"><strong>信箱登入只給店家這一端</strong>
+    （客人端不需要、也沒有這個入口）。用信箱建立帳號時，你的
+    <strong>電子郵件與密碼</strong>交給 Firebase Authentication 保管：
+    <strong class="no">密碼我們自己也拿不到</strong>——我們收到的是驗證結果，
+    不是你打的那串字。重設密碼的信也是由 Firebase 直接寄給你。</p>
+  </div>
+  <div class="scroll"><table>
+    <tr><th>資料</th><th>誰輸入的</th><th>誰看得到</th></tr>
+    <tr><td>你的稱呼（例如「王小姐」）</td><td>店家在櫃台打的</td><td>該店店員、你本人</td></tr>
+    <tr><td>寄了幾杯、領了幾杯、什麼時候</td><td>店家</td><td>該店店員、你本人</td></tr>
+    <tr><td>你的客人碼</td><td>系統產生</td><td>該店店員、你本人</td></tr>
+    <tr><td>匿名 uid</td><td>系統產生</td><td>系統（店家看得到「已綁定」，看不到你的帳號）</td></tr>
+    <tr><td>電子郵件、帳號名稱</td><td>你選擇登入時由 Google／Apple 提供</td>
+        <td><strong class="no">只有系統。店家看不到</strong></td></tr>
+    <tr><td>密碼（只有信箱登入才有）</td><td>店家自己設定</td>
+        <td><strong class="no">沒有人。由 Firebase 保管，我們拿不到原文</strong></td></tr>
+  </table></div>
+  <p><strong>我們不收集：</strong>你的電話、地址、生日、性別、位置、通訊錄、
+  廣告識別碼。App 裡沒有任何欄位可以輸入這些。</p>
+
+  <h3>店家這一端</h3>
+  <ul>
+    <li>登入用的 Google／Apple 帳號（電子郵件、顯示名稱），
+        或你自己設定的<strong>電子郵件與密碼</strong></li>
+    <li>店名、方案、目前客人數</li>
+    <li>你建立的商品名稱與<strong>商品照片</strong></li>
+    <li>你輸入的客人稱呼、以及每一筆寄／領紀錄（含是「哪一位店員」記的）</li>
+  </ul>
+  <div class="card warn">
+    <strong>商品照片會上傳</strong>到你自己店家的空間，這樣同店的其他店員才會看到同一張圖。
+    照片只有你店裡的成員與綁定該商品的客人看得到。
+    相機的另一個用途是掃客人碼——<strong>掃碼的畫面不會被存成圖片</strong>。
+  </div>
+
+  <h2>使用狀況統計（Firebase Analytics）</h2>
+  <p>我們記錄「店家有沒有走完某一段流程」，用來判斷 App 哪一步卡住人。
+  <strong>下面就是全部的事件，一項不多。</strong></p>
+  <div class="scroll"><table>
+    <tr><th>事件</th><th>一起送出的內容</th></tr>
+    <tr><td><code>shop_signed_in</code></td><td>登入方式（google／apple）</td></tr>
+    <tr><td><code>shop_created</code>、<code>product_added</code>、<code>deposit</code>、<code>entry_voided</code>、<code>pickup_code_shown</code>、<code>free_limit_reached</code>、<code>binding_repaired</code>、<code>orphan_shop_recovered</code>、<code>bind_code_lookup_missing</code></td><td>沒有附加內容</td></tr>
+    <tr><td><code>customer_added</code></td><td>是否當場完成綁定（是／否）</td></tr>
+    <tr><td><code>pickup</code></td><td>領取方式（手動／領取碼）</td></tr>
+    <tr><td><code>customer_bound</code></td><td>綁定方式（客人碼／店家掃描）</td></tr>
+    <tr><td><code>plans_viewed</code></td><td>目前客人數（一個數字）</td></tr>
+    <tr><td><code>write_denied</code>、<code>listener_denied</code></td><td>哪一類資料、錯誤代碼</td></tr>
+    <tr><td><code>uncaught_error</code></td><td>錯誤的類型名稱、是否致命</td></tr>
+  </table></div>
+  <div class="card">
+    <strong>這些事件一律不帶：</strong>客人姓名、商品名稱、杯數、金額、店家 ID、
+    客人 ID、使用者 uid、客人碼。<br>
+    這支 App 碰的是別人預付的錢，把那些送進分析服務沒有任何必要。
+  </div>
+
+  <h2>當機報告（Firebase Crashlytics）</h2>
+  <p>App 當掉時會送出錯誤堆疊、裝置型號、系統版本、App 版本。
+  <strong>只在正式版送出</strong>，且不含你的帳本內容。</p>
+
+  <h2>存在你手機裡的部分</h2>
+  <p>店家端會把客人、商品、流水存一份在手機本機，讓你<strong>斷網時照樣記得了帳</strong>，
+  連上網再同步。刪除 App 就會一併刪掉這份本機資料。</p>
+
+  <h2>我們不做的事</h2>
+  <ul>
+    <li><strong>不賣、不出租、不交換</strong>任何資料</li>
+    <li><strong>沒有廣告</strong>，也沒有廣告 SDK 或廣告識別碼</li>
+    <li><strong>沒有第三方追蹤器</strong>——除了上面列出的 Google Firebase，沒有別的服務拿得到資料</li>
+    <li>不會為了行銷寄信給客人</li>
+  </ul>
+
+  <h2>保存多久</h2>
+  <div class="scroll"><table>
+    <tr><th>資料</th><th>保存期限</th><th>為什麼</th></tr>
+    <tr><td>寄／領流水與相關的客人資料</td><td>自該位客人<strong>最後一筆流水起 5 年</strong></td>
+        <td>那是店家的營業帳務紀錄</td></tr>
+    <tr><td>從未有流水、也未綁定任何帳號的客人</td><td>1 年</td><td>建了沒用到的空白資料</td></tr>
+    <tr><td>Analytics 事件</td><td>Firebase 預設保留期（目前 14 個月）</td><td></td></tr>
+    <tr><td>當機報告</td><td>90 天</td><td>Crashlytics 預設</td></tr>
+  </table></div>
+
+  <h2>你的權利</h2>
+  <ul>
+    <li><strong>查看</strong>：客人端隨時看得到自己所有的寄／領紀錄；店家端可匯出 CSV。</li>
+    <li><strong>刪除</strong>：App 內「帳號」分頁 →「刪除帳號」。
+      詳細說明（包含刪掉什麼、留下什麼、以及沒裝 App 怎麼提出）見
+      <a href="https://justgo0313.github.io/policy/cupkeep/delete_account.html">刪除帳號說明</a>。</li>
+    <li><strong>更正</strong>：稱呼與杯數由店家維護，請直接向該店提出；
+      記錯的紀錄店家可以作廢（作廢會留下軌跡，不是抹掉）。</li>
+  </ul>
+  <div class="card">
+    <strong>為什麼刪帳號不會刪掉帳本：</strong>那份紀錄同時是店家的營業紀錄，
+    而且同一份流水裡有其他客人的預付款。刪掉會毀掉別人的憑據。
+    刪帳號會解除你和店家的連結，你的個人身分資料則完全移除。
+  </div>
+
+  <h2>兒童</h2>
+  <p>CupKeep 不以兒童為對象，也不會刻意收集兒童的個人資料。</p>
+
+  <h2>政策變更</h2>
+  <p>有實質變更時會更新本頁上方的日期。若變更影響到已經收集的資料如何使用，
+  會在 App 內告知。</p>
+
+  <h2>其他頁面</h2>
+  <ul>
+    <li><a href="https://justgo0313.github.io/policy/cupkeep/support.html">支援與常見問題</a></li>
+    <li><a href="https://justgo0313.github.io/policy/cupkeep/delete_account.html">刪除帳號說明</a></li>
+  </ul>
+
+  <footer>
+    CupKeep · <a href="mailto:hameboy8@yahoo.com.tw">hameboy8@yahoo.com.tw</a>
+  </footer>
+</main>
+</body>
+</html>
