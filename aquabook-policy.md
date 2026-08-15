@@ -1,39 +1,42 @@
 Privacy Policy
 ----------------
 
-**Last updated: 2026-08-10**
+**Last updated: 2026-08-15**
 
 ### Introduction
 This privacy policy explains what information Aquabook collects and how it is used.
 
-**Aquabook does not collect any data.** Aquabook is an aquarium log with no accounts and no servers of ours. Everything you record stays on your own device — and, if you leave backup on, in **your own iCloud account**, which only you can read.
+**Aquabook does not collect any data.** Aquabook is an aquarium log with no accounts and no servers of ours. Everything you record stays on your own device — and, if you leave backup on, in **your own cloud account** (iCloud on iPhone and iPad, your Google account on Android), which only you can read.
 
 ### Information Collection and Use
 Aquabook does **not** collect, store, or transmit any personally identifiable information. We do not ask for your name, email address, location, contacts, or photos. There is no sign-up and no account.
 
 ### Where Your Data Is Stored
-- Everything you record — tanks, water parameters, livestock, equipment, maintenance events and reminders — is stored **only on your own device**.
+- Everything you record — tanks, water parameters, livestock, equipment, maintenance events and reminders — is stored **on your own device**, and is copied off it only by the backups described below. Both go to an account that belongs to you; neither goes to us.
 - **iCloud backup (Aquabook 1.1 and later).** Aquabook keeps one backup file in *your own* iCloud account so your records survive a lost or replaced phone. It goes to Apple's iCloud under your Apple Account, not to us: we have no servers and never receive, see, or store a copy.
 - This backup is **on by default and can be turned off at any time** in the app (share menu → iCloud backup). You can also delete the backup from iCloud there. Turning it off stops all copying immediately.
 - Aquabook does **not** sync between devices and does not merge data. There is exactly one backup file, and only your own devices, signed in to your Apple Account, can read it.
-- Your data is stored in the app's own private storage area, protected by the operating system's app sandbox and device encryption. Aquabook does not apply an additional layer of its own encryption.
+- **Android system backup.** On Android, Aquabook's records are included in the operating system's own Auto Backup, which copies them to **your Google account**. This is run by Android, not by Aquabook — we never receive or see it. You can turn it off in Android Settings › Google › Backup, or per app in Settings › System › Backup. Your unlock status for Aquabook Pro is deliberately **excluded** from that backup.
+- Your data is stored in the app's own private storage area, protected by the operating system's app sandbox and device encryption. Aquabook does not apply an additional layer of its own encryption. The one exception is a file you export yourself — see *Exporting Your Data*.
 
 ### Third Party Services
 Aquabook contains **no advertising, no analytics, and no third-party SDKs that collect data**. No third party receives any information from this app.
 
-The app uses only these open-source libraries, none of which transmit your data: local storage (`hive_ce`), identifier generation (`uuid`), file location lookup (`path_provider`), and Apple's in-app purchase interface (`in_app_purchase`).
+The app uses only these open-source libraries, none of which transmit your data: local storage (`hive_ce`, `hive_ce_flutter`), identifier generation (`uuid`), file location lookup (`path_provider`), the in-app purchase interface (`in_app_purchase`), on-device reminders on Android (`flutter_local_notifications`, `timezone`, `flutter_timezone`), and Apple's standard icon set (`cupertino_icons`).
 
 ### Network Access
-Aquabook talks to no server of ours — there is none. The only network activity is the iCloud backup described above, which is handled by the operating system and goes to your own iCloud account, and Apple's App Store when you make or restore a purchase.
+Aquabook talks to no server of ours — there is none. The only network activity is the backups described above, which are handled by the operating system and go to your own iCloud or Google account, and the App Store or Google Play when you make or restore a purchase.
 
 ### Purchases
 Aquabook Pro is a one-time purchase processed entirely by Apple. **We never see or receive your payment details.** The app stores only a local flag indicating whether Pro has been unlocked. Purchase and restore are handled through Apple's App Store systems; please refer to Apple's privacy policy for how they process transactions.
 
 ### Notifications
-Reminders are **optional**. If you create a reminder, Aquabook asks the operating system for permission to send local notifications. These notifications are generated and delivered **on your device only** — nothing is sent to us or to any server. You can turn them off at any time in iOS Settings.
+Reminders are **optional**. If you create a reminder, Aquabook asks the operating system for permission to send local notifications. These notifications are generated and delivered **on your device only** — nothing is sent to us or to any server. You can turn them off at any time in your device's settings (on Android, reminders also need the *Alarms & reminders* permission).
 
 ### Exporting Your Data
-Aquabook lets you export your data as a JSON backup or CSV files, at no cost. The exported file is created **on your device**, and you choose where it goes using the standard iOS share sheet. Once you send a file somewhere else, that destination's own privacy policy applies. We never receive a copy.
+Aquabook lets you export your data as a JSON backup or CSV files, at no cost. The exported file is created **on your device**, and you choose where it goes using your device's standard share sheet. Once you send a file somewhere else, that destination's own privacy policy applies. We never receive a copy.
+
+**On Android, exporting also saves a copy to your Downloads folder.** This happens as soon as you tap export — before you pick where to share it, and even if you then cancel sharing. That copy sits in shared storage, so other apps with storage access can read it, it is not removed when you uninstall Aquabook, and deleting a tank inside the app does not delete it. Remove it with your file manager if you do not want it kept.
 
 ### Children's Privacy
 Aquabook does not collect data from users of any age, including children under 13.
