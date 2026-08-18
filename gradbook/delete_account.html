@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gradbook — 刪除帳號</title>
+<style>
+  :root {
+    --paper: #F7F7FA; --card: #FFFFFF; --ink: #1A1C20; --slate: #5C6270;
+    --line: #E2E4EC; --teal: #3C5C8A; --teal-soft: #E3EAF5;
+    --amber: #9A5B00; --amber-soft: #F7EBD9;
+    --shadow: 0 1px 2px rgba(19,32,29,.06), 0 8px 24px rgba(19,32,29,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #101216; --card: #191C22; --ink: #E8EAF0; --slate: #99A0AE;
+      --line: #282C36; --teal: #9DBBE8; --teal-soft: #1B2738;
+      --amber: #E0A867; --amber-soft: #2C2318;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #101216; --card: #191C22; --ink: #E8EAF0; --slate: #99A0AE;
+    --line: #282C36; --teal: #9DBBE8; --teal-soft: #1B2738;
+    --amber: #E0A867; --amber-soft: #2C2318;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+  }
+  :root[data-theme="light"] {
+    --paper: #F7F7FA; --card: #FFFFFF; --ink: #1A1C20; --slate: #5C6270;
+    --line: #E2E4EC; --teal: #3C5C8A; --teal-soft: #E3EAF5;
+    --amber: #9A5B00; --amber-soft: #F7EBD9;
+    --shadow: 0 1px 2px rgba(19,32,29,.06), 0 8px 24px rgba(19,32,29,.06);
+  }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: -apple-system, "PingFang TC", "Noto Sans TC", sans-serif;
+    line-height: 1.75; font-size: 17px;
+  }
+  main { max-width: 40rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 1.9rem; line-height: 1.3; text-wrap: balance; margin: 0 0 .5rem; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .75rem; color: var(--teal); }
+  .lede { color: var(--slate); margin: 0 0 2rem; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 1.25rem 1.4rem; box-shadow: var(--shadow); margin: 1rem 0;
+  }
+  ol, ul { padding-left: 1.3rem; }
+  li { margin: .4rem 0; }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--slate); font-weight: 600; }
+  .keep { background: var(--amber-soft); color: var(--amber);
+          border-radius: 999px; padding: .1rem .6rem; font-size: .82rem; white-space: nowrap; }
+  .gone { background: var(--teal-soft); color: var(--teal);
+          border-radius: 999px; padding: .1rem .6rem; font-size: .82rem; white-space: nowrap; }
+  code { background: var(--teal-soft); color: var(--teal);
+         padding: .1rem .35rem; border-radius: 5px; font-size: .9em; }
+  footer { color: var(--slate); font-size: .88rem; margin-top: 3rem;
+           border-top: 1px solid var(--line); padding-top: 1.25rem; }
+  a { color: var(--teal); }
+</style>
+</head>
+<body>
+
+<main>
+  <h1>刪除你的 Gradbook 帳號</h1>
+  <p class="lede">你可以在 App 裡自己刪，不必聯絡任何人。這一頁說明怎麼刪、刪掉什麼、
+     以及<strong>有一件事刪不掉</strong>——那一件我們必須先說清楚。</p>
+
+  <h2>在 App 裡刪</h2>
+  <div class="card">
+    <ol>
+      <li>打開 Gradbook</li>
+      <li>切到最下面的<strong>「設定」</strong>分頁</li>
+      <li>點<strong>「刪除帳號」</strong></li>
+      <li>畫面會先把「會消失什麼、會留下什麼」講一遍，確認後再重新登入一次驗證身分</li>
+    </ol>
+  </div>
+
+  <h2>刪掉什麼、留下什麼</h2>
+  <table>
+    <tr><th>資料</th><th></th><th>為什麼</th></tr>
+    <tr>
+      <td>你的登入身分（Apple／Google／Email／訪客帳號）</td>
+      <td><span class="gone">刪除</span></td>
+      <td>用 Apple 登入的話，我們同時會<strong>撤銷授權</strong>，
+          你的「以 Apple 帳號登入」設定裡不會留下這個 App</td>
+    </tr>
+    <tr>
+      <td>你的使用者資料、好友碼、好友關係</td>
+      <td><span class="gone">刪除</span></td>
+      <td>同學名單上你那一列會消失</td>
+    </tr>
+    <tr>
+      <td>你還沒送出的草稿</td>
+      <td><span class="gone">刪除</span></td>
+      <td>那是純粹屬於你的內容</td>
+    </tr>
+    <tr>
+      <td><strong>這支手機上的全部本機資料</strong>（你的紀念冊、同學寫給你的那些頁、照片）</td>
+      <td><span class="gone">刪除</span></td>
+      <td>紀念冊本來就存在你自己的手機裡，不是我們的伺服器</td>
+    </tr>
+    <tr>
+      <td>派發單（誰請你填哪一頁的那筆紀錄）</td>
+      <td><span class="keep">保留</span></td>
+      <td>它同時是<strong>對方</strong>清單上的一筆，刪掉會讓他的紀錄憑空少一列。
+          它會依原本的保存期限自動清除，而你的帳號刪掉之後，
+          上面的識別碼<strong>指不到任何人</strong></td>
+    </tr>
+    <tr>
+      <td><strong>你寫給別人的那一頁，連同你當時的名字</strong></td>
+      <td><span class="keep">保留</span></td>
+      <td>它已經在他的手機裡了</td>
+    </tr>
+  </table>
+
+  <div class="card">
+    <strong>有一件事刪不掉，我們必須誠實說明。</strong>
+    你填給別人的那一頁，<strong>連同你當時的暱稱</strong>，已經在他的手機裡了。
+    就像紙本同學錄——你寫在他本子上的那一頁，撕不回來，上面的署名也擦不掉。
+    <br><br>
+    刪除帳號會斷開那一頁與你的帳號的關聯（我們的伺服器上不再有任何東西指向你），
+    但<strong>他手機裡那一頁上的暱稱不會改變</strong>——那份資料在他的裝置上，我們碰不到。
+    只有<strong>還沒送到他手上</strong>的那幾張，之後會顯示成「某個人」。
+  </div>
+
+  <h2>刪掉之後救不回來</h2>
+  <div class="card">
+    你的紀念冊、同學寫給你的那些頁、同學名單與好友碼都會消失。
+    <strong>不是隱藏起來，是真的沒了</strong>——我們救不回來，你也救不回來。
+    <br><br>
+    還想留著那些頁的話，<strong>先在本子裡「匯出成 PDF」把它存下來</strong>再刪。
+    匯出永遠免費，也不會加浮水印。
+  </div>
+
+  <h2>沒有裝 App 也想刪</h2>
+  <div class="card">
+    寄信到 <a href="mailto:hameboy8@yahoo.com.tw?subject=Gradbook%20%E5%88%AA%E9%99%A4%E5%B8%B3%E8%99%9F">hameboy8@yahoo.com.tw</a>，
+    主旨寫「Gradbook 刪除帳號」。為了確認是本人，請附上你的<strong>好友碼</strong>
+    （在 App 的「我的同學」分頁看得到），或當時登入用的 Email。
+    我們會在 7 天內處理完並回信。
+  </div>
+
+  <h2>保存期限</h2>
+  <p>派發途中那一份（雲端暫存的內容與照片）自送出起<strong>保存 90 天</strong>後自動清除；
+  收藏者本機的那一份不受影響，因為那已經是他的東西。
+  伺服器資料存放於 Google Cloud <code>asia-east1</code>（台灣）。</p>
+
+  <h2>其他頁面</h2>
+  <ul>
+    <li><a href="https://justgo0313.github.io/policy/gradbook-policy.html">隱私政策</a></li>
+  </ul>
+
+  <footer>
+    Gradbook · 最後更新 2026-08-18 ·
+    有問題請寄 <a href="mailto:hameboy8@yahoo.com.tw">hameboy8@yahoo.com.tw</a>
+  </footer>
+</main>
+</body>
+</html>
