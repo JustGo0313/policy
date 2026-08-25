@@ -5,6 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>加我一起寫同學錄 · Gradbook</title>
 <!--
+  🔴 **這一頁 100% 的曝光都在聊天室的群組訊息裡**——LINE／Messenger 先給的是
+  這張預覽卡，不是網址。沒有這幾行的話，那張卡只有一行標題、沒有一句
+  「這是什麼」、沒有圖，跟一則貼錯的連結長得一樣。
+  ⚠️ 這裡的字**跟頁面本文是同一件事的兩種長度**，改一邊就要改另一邊。
+  ⚠️ `og:url` 刻意**不帶 `?c=`**：那組碼是某一個人的，不要餵進爬蟲的快取。
+-->
+<meta name="description" content="Gradbook 把紙本同學錄搬到手機上。填別人的頁永遠免費，你寫完的那一頁會留在對方的本子裡。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://justgo0313.github.io/policy/gradbook/join.html">
+<meta property="og:title" content="有同學想請你在他的紀念冊上寫一頁">
+<meta property="og:description" content="Gradbook 把紙本同學錄搬到手機上。填別人的頁永遠免費，你寫完的那一頁會留在對方的本子裡。">
+<meta property="og:image" content="https://justgo0313.github.io/policy/gradbook/join-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="Gradbook">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="有同學想請你在他的紀念冊上寫一頁">
+<meta name="twitter:description" content="Gradbook 把紙本同學錄搬到手機上。填別人的頁永遠免費，你寫完的那一頁會留在對方的本子裡。">
+<meta name="twitter:image" content="https://justgo0313.github.io/policy/gradbook/join-card.png">
+<!--
   同學把好友碼貼進班級群組時，附的就是這個網址。
 
   🔴 **這個網址要穩定。** App 內的 `friendCodeShareText` 六個語系都寫死它，
@@ -36,6 +57,10 @@
   #code {
     font: 700 2rem/1.2 ui-monospace, SFMono-Regular, Menlo, monospace;
     letter-spacing: .18em; word-break: break-all;
+    /* 🔴 複製鈕在聊天 App 的內建瀏覽器裡常常是沒有的（見下面那段 script）——
+       那時唯一的路是長按選取，而預設的選取會從半個字開始。
+       `all` ＝ 碰到任何一個字就整串選起來。 */
+    -webkit-user-select: all; user-select: all;
   }
   button {
     margin-top: .9rem; padding: .6rem 1.2rem; font-size: 1rem;
@@ -54,6 +79,9 @@
     <div class="muted">他的好友碼</div>
     <div id="code">—</div>
     <button id="copy" hidden>複製</button>
+    <!-- 🔑 **不是把按鈕的字換成這句**：一顆按了不會有事的按鈕比沒有按鈕更糟。
+         複製這條路不通的時候，按鈕收起來、換成這一句話。 -->
+    <p class="muted" id="copyhint" hidden>請長按上面那串碼複製</p>
   </div>
 
   <ol id="how" hidden>
@@ -80,12 +108,32 @@
     document.getElementById('code').textContent = code;
     document.getElementById('how').hidden = false;
     var btn = document.getElementById('copy');
-    btn.hidden = false;
-    btn.addEventListener('click', function () {
-      navigator.clipboard.writeText(code).then(function () {
-        btn.textContent = '複製好了';
+    var hint = document.getElementById('copyhint');
+    // 🔴 **`navigator.clipboard` 在 LINE／Messenger 的內建 WebView 裡常常是
+    //    undefined**（非安全內容、或那個 WebView 根本沒開這個 API）。
+    //    在這之前這裡是 `navigator.clipboard.writeText(code).then(...)`：
+    //    同步丟 TypeError、按鈕文字不變、頁面零反應——而這一頁只有這一個動作。
+    //    ⚠️ **兩種失敗都要接**：同步丟出來的（try/catch）、
+    //    以及 Promise 被 reject 的（權限被擋、使用者沒有手勢）。
+    function cannotCopy() {
+      btn.hidden = true;
+      hint.hidden = false;
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      btn.hidden = false;
+      btn.addEventListener('click', function () {
+        try {
+          navigator.clipboard.writeText(code).then(function () {
+            btn.textContent = '複製好了';
+          }, cannotCopy);
+        } catch (e) {
+          cannotCopy();
+        }
       });
-    });
+    } else {
+      // 這台裝置根本沒有這條路 ⇒ 一開始就不要給那顆按鈕
+      cannotCopy();
+    }
   } else {
     document.getElementById('code').textContent = '—';
     document.getElementById('nocode').hidden = false;
