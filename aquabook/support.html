@@ -102,20 +102,28 @@
 
   <div class="card">
     <p class="q">Is my data backed up?</p>
-    <p class="a">From <strong>version 1.1</strong>, Aquabook keeps one backup in
-    <strong>your own iCloud</strong> and refreshes it in the background — there
-    is no button to press. It goes to your private iCloud container, not to us:
-    Aquabook has no servers and no account, so we never see your records.
-    You can see the status any time under
-    <strong>share icon → iCloud backup</strong>.</p>
+    <p class="a"><strong>On iPhone and iPad</strong>, Aquabook keeps one backup
+    in <strong>your own iCloud</strong> and refreshes it in the background —
+    there is no button to press. It goes to your private iCloud container, not
+    to us: Aquabook has no servers and no account, so we never see your
+    records. You can see the status any time from the share icon, under
+    <strong class="nav" data-app="icloudRowTitle">iCloud backup</strong>.</p>
+    <p class="a"><strong>On Android</strong>, your log is included in Android's
+    own system backup (Settings › Google › Backup). Aquabook does not keep a
+    separate copy, and there is no status screen for it. It does not move to
+    iPhone — export a full backup first if you switch.</p>
   </div>
 
   <div class="card">
     <p class="q">I got a new phone. How do I get my records back?</p>
-    <p class="a">Sign in to the same Apple Account, install Aquabook and open
-    it. If a backup is found, it offers to restore before you start.
-    If you skipped that prompt, go to
-    <strong>share icon → iCloud backup → Restore</strong>.</p>
+    <p class="a"><strong>On iPhone and iPad</strong>: sign in to the same Apple
+    Account, install Aquabook and open it. If a backup is found, it offers to
+    restore before you start. If you skipped that prompt, open the share icon
+    and go to <strong class="nav" data-app="icloudRowTitle,icloudRestoreAction">iCloud backup → Restore</strong>.</p>
+    <p class="a"><strong>On Android</strong>: restore the phone from your
+    Google backup during setup, and your log comes back with it. Coming from an
+    iPhone, or restoring later? Use the full backup file instead — see the next
+    question.</p>
   </div>
 
   <div class="card">
@@ -130,11 +138,12 @@
   <div class="card">
     <p class="q">Aquabook says my tank has no target ranges</p>
     <p class="a">Target ranges are not filled in for you — the app never guesses
-    what is right for <em>your</em> tank. Open the
-    <strong>flask icon → a parameter</strong> and set a range (typical ranges
-    are shown there, and you can apply one with a tap). Until you do, Aquabook
-    will not claim your readings are in range, because it has nothing to
-    compare them to.</p>
+    what is right for <em>your</em> tank. They live in the tank itself, because
+    what counts as in range differs from tank to tank: open the tank and go to
+    <strong class="nav" data-app="tabSetup,setupTargetRangesTitle">Setup → Target ranges</strong> (typical ranges are shown
+    there, and you can apply one with a tap). Until you do, Aquabook will not
+    claim your readings are in range, because it has nothing to compare them
+    to.</p>
   </div>
 
   <div class="card">
