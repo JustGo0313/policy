@@ -1,7 +1,7 @@
 Privacy Policy
 ----------------
 
-**Last updated: 2026-08-15**
+**Last updated: 2026-08-26**
 
 ### Introduction
 This privacy policy explains what information Aquabook collects and how it is used.
@@ -13,7 +13,7 @@ Aquabook does **not** collect, store, or transmit any personally identifiable in
 
 ### Where Your Data Is Stored
 - Everything you record — tanks, water parameters, livestock, equipment, maintenance events and reminders — is stored **on your own device**, and is copied off it only by the backups described below. Both go to an account that belongs to you; neither goes to us.
-- **iCloud backup (Aquabook 1.1 and later).** Aquabook keeps one backup file in *your own* iCloud account so your records survive a lost or replaced phone. It goes to Apple's iCloud under your Apple Account, not to us: we have no servers and never receive, see, or store a copy.
+- **iCloud backup.** Aquabook keeps one backup file in *your own* iCloud account so your records survive a lost or replaced phone. It goes to Apple's iCloud under your Apple Account, not to us: we have no servers and never receive, see, or store a copy.
 - This backup is **on by default and can be turned off at any time** in the app (share menu → iCloud backup). You can also delete the backup from iCloud there. Turning it off stops all copying immediately.
 - Aquabook does **not** sync between devices and does not merge data. There is exactly one backup file, and only your own devices, signed in to your Apple Account, can read it.
 - **Android system backup.** On Android, Aquabook's records are included in the operating system's own Auto Backup, which copies them to **your Google account**. This is run by Android, not by Aquabook — we never receive or see it. You can turn it off in Android Settings › Google › Backup, or per app in Settings › System › Backup. Your unlock status for Aquabook Pro is deliberately **excluded** from that backup.
@@ -52,7 +52,7 @@ If you have any questions about this privacy policy, please contact us at **lkk5
 隱私政策（繁體中文）
 ----------------
 
-**最後更新：2026-08-10**
+**最後更新：2026-08-26**
 
 ### 前言
 本隱私政策說明 Aquabook 蒐集哪些資訊，以及如何使用這些資訊。
@@ -64,7 +64,7 @@ Aquabook **不會**蒐集、儲存或傳輸任何可識別個人身分的資訊�
 
 ### 你的資料存放在哪裡
 - 你記錄的一切——缸體、水質參數、生物、設備、維護事件與提醒——都**只儲存在你自己的裝置上**。
-- **iCloud 備份（Aquabook 1.1 起）**：Aquabook 會在**你自己的** iCloud 帳號裡保留一份備份檔，讓你手機遺失或換機時紀錄還在。它進的是你 Apple 帳號底下的 iCloud，不是我們這裡——我們沒有伺服器，也不會收到、看到或保存任何副本。
+- **iCloud 備份**：Aquabook 會在**你自己的** iCloud 帳號裡保留一份備份檔，讓你手機遺失或換機時紀錄還在。它進的是你 Apple 帳號底下的 iCloud，不是我們這裡——我們沒有伺服器，也不會收到、看到或保存任何副本。
 - 這份備份**預設開啟，而且隨時關得掉**（App 內：分享選單 → iCloud backup）。同一頁也可以把 iCloud 上那份刪掉。關掉之後就立刻不再複製任何東西。
 - Aquabook **不做跨裝置同步**，也不合併資料。雲端只有一份備份檔，而且只有登入你 Apple 帳號的你自己的裝置讀得到。
 - 資料存放在本 App 專屬的私有儲存區，受作業系統的 App 沙盒與裝置加密保護。Aquabook 本身不另外再加一層加密。
